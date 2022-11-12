@@ -1,0 +1,20 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#back-white {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-self: center;
+  align-self: center;
+}
+
+.voltar-page-form {
+  color: #2288aa !important;
+  font-weight: bold;
+}

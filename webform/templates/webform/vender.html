@@ -1,0 +1,42 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="{% static 'webform/css/style.css' %}">
+  <link rel="stylesheet" href="{% static 'webform/css/consultar_vendas.css' %}">
+  <title>Login - loja</title>
+</head>
+<body>
+  <main class="main-consultar-vendas">
+    <div class="content-adicionar-venda">
+      Total: R$<span id="total-venda">0</span>
+    </div>
+    <div class="content-pesquisar">
+      <input placeholder="Digite um código de barras" id="input-pesquisa-produto"/>
+      <input placeholder="Quantidade" id="input-quantidade-produto"/>
+      <a id="pesquisa-produto">
+        Adicionar
+      </a>
+    </div>
+    
+    <ul class="lista-vendas">
+      <li> 
+        <h2>Nome</h2>
+        <h3>Barras</h3> 
+        <h3>Preço</h3>
+      </li>
+    </ul>
+    <div class="div-btn">
+      <a class="finalizar-venda">Finalizar</a>
+    </div>
+  </main>
+
+  <script src="{% static 'webform/js/vender.js' %}"></script>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="{% static 'webform/css/style.css' %}">
+  <link rel="stylesheet" href="{% static 'webform/css/form.css' %}">
+  <title>Login - loja</title>
+</head>
+<body>
+  <main class="main-form">
+    <form method="post">
+      
+      {% if valor %}
+        Valor Total: R$ {{valor}}
+      {% endif %}
+        
+      {% csrf_token %}
+      {{ form.as_p }}
+
+      <button type="submit" class="btn-salvar-produto">Salvar</button>
+    </form>
+  </main>
+
+  <script src="{% static 'webform/js/forma_pagamento.js' %}"></script>
+</body>
+</html>

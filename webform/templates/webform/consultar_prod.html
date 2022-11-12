@@ -1,0 +1,33 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="{% static 'webform/css/style.css' %}">
+  <link rel="stylesheet" href="{% static 'webform/css/consultar_produtos.css' %}">
+  <title>Login - loja</title>
+</head>
+<body>
+  <main class="main-consultar-prod">
+    <div class="content-adicionar-produto">
+      <a class="adicionar-produto" href="{% url 'cadastrar-produtos' %}">+</a>
+    </div>
+    <div class="content-pesquisar">
+      <input placeholder="Digite um código de barras" id="input-pesquisa-produto"/>
+      <a id="pesquisa-produto">
+        Pesquisar
+      </a>
+    </div>
+
+    <ul class="lista-produtos"></ul>
+
+  </main>
+
+  <script src="{% static 'webform/js/produtos.js' %}"></script>
+
+</body>
+</html>

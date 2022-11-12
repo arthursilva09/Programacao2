@@ -1,0 +1,63 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="{% static 'webform/css/style.css' %}">
+  <link rel="stylesheet" href="{% static 'webform/css/confirmacao/print.css' %}" media="print" />
+
+  <title>SENAC</title>
+</head>
+
+<body>
+  <div id="back-white">
+    <header class="container">
+      <div id="headerbuttons">
+        <a id="headerbuttons-senac" href="https://www.pi.senac.br/" target="_blank">Senac PI</a>
+        <button id="btn-menu">Menu <span></span></button>
+        <nav id="menu">
+          <a href="https://www.pi.senac.br/" target="_blank"><h4> Início </h4></a>
+          <a href="./"><h4> Agendar Curso </h4></a>
+        </nav>
+      </div>
+      <img src="{% static 'webform/img/logo.jpg' %}" alt="">
+    </header>
+
+    <main class="container">
+      {% block main %} {% endblock main %}
+    </main>
+  </div>
+
+  <script src="https://www.google.com/recaptcha/api.js"></script>
+  <script>
+    function onSubmit(token) {
+      document.getElementById("demo-form").submit();
+    }
+  </script>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.11.2/jquery.mask.min.js" integrity="sha512-Y/GIYsd+LaQm6bGysIClyez2HGCIN1yrs94wUrHoRAD5RSURkqqVQEU6mM51O90hqS80ABFTGtiDpSXd2O05nw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.11.2/jquery.mask.min.js" integrity="sha512-Y/GIYsd+LaQm6bGysIClyez2HGCIN1yrs94wUrHoRAD5RSURkqqVQEU6mM51O90hqS80ABFTGtiDpSXd2O05nw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+    $(function () {
+      $.applyDataMask();
+    });
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"></script>
+  <script type="module" src="{% static 'webform/js/script.js' %}"></script>
+  <script type="module" src="{% static 'webform/js/grids.js' %}"></script>
+
+  {% block js %} {% endblock js %}
+</body>
+
+</html>

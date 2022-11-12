@@ -1,0 +1,45 @@
+.main-form {
+  width: 30vw;
+  height: 100vh;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-form form {
+  display: block;
+  width: 100%;
+  background-color: white;
+  padding: 1rem;
+  border-radius: .5rem;
+  box-shadow: 0 .25rem .25rem 0 #00000025;
+}
+
+.main-form p {
+  width: 80%;
+  margin: auto;
+}
+
+.main-form input, .main-form select {
+  display: block;
+  width: 100%;
+  padding: 1rem 1.5rem;
+  border: .01rem solid #5B5B5B80;
+  border-radius: .5rem;
+  margin: .75rem 0;
+  box-sizing: border-box;
+}
+
+.main-form button {
+  display: block;
+  width: 100%;
+  padding: 1rem 2rem;
+  color: white;
+  background-color: #7A6FBF;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: .5rem;
+  margin: 1rem auto;
+  width: 80%;
+}

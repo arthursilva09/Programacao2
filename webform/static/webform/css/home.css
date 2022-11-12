@@ -1,0 +1,30 @@
+.main-home {
+  width: 60vw;
+  height: 100vh;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.main-home > a {
+  width: 100%;
+  height: auto;
+  background-color: white;
+  border-radius: .5rem;
+  padding: 2rem;
+  cursor: pointer;
+  box-shadow: 0 .25rem .25rem 0 #00000025;
+}
+
+.main-home > a img {
+  width: 8rem;
+  height: 6rem;
+  display: block;
+  margin: 1rem auto;
+}
+
+.main-home > a h2 {
+  text-align: center;
+}

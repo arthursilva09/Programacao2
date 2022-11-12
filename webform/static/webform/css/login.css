@@ -1,0 +1,46 @@
+.main-login {
+  width: 100vw;
+  height: 100vh;
+  background: transparent url('../img/bg-login.jpg') no-repeat center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-login {
+  width: auto;
+  height: auto;
+  background-color: white;
+  border-radius: .5rem;
+  padding: 2rem;
+}
+
+.content-login img {
+  width: 8rem;
+  height: 6rem;
+  display: block;
+  margin: 1rem auto;
+}
+
+.content-login input {
+  display: block;
+  width: 20rem;
+  padding: 1rem 1.5rem;
+  border: .01rem solid #5B5B5B80;
+  border-radius: .5rem;
+  margin: .75rem auto;
+}
+
+.content-login a {
+  display: block;
+  width: 100%;
+  padding: 1rem 2rem;
+  color: white;
+  background-color: #7A6FBF;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: .5rem;
+  margin: 1rem 0;
+  text-align: center;
+}
